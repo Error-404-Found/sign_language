@@ -2,6 +2,9 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import tensorflow as tf
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'..')))
 from src.utils import extract_landmarks
 
 # Load the trained model
