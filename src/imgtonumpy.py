@@ -54,7 +54,7 @@ cv2.destroyAllWindows()
 
 # Save collected data to gesture_data.npy
 if data:
-    np.save("gesture_data.npy", data, allow_pickle=True)
+    np.save("/home/gaurav/personal/sign_language/data/gesture_data.npy", data, allow_pickle=True)
     print(f"Data saved successfully with {len(data)} samples.")
 else:
     print("No data collected.")

@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 
 # Load new or existing data (gesture_data.npy)
-data = np.load("../data/gesture_data.npy", allow_pickle=True)
+data = np.load("/home/gaurav/personal/sign_language/data/gesture_data.npy", allow_pickle=True)
 X = np.array([item[0] for item in data])  # Landmarks
 y = np.array([item[1] for item in data])  # Labels
 
